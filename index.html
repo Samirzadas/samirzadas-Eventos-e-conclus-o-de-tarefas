@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - Aula 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minhas Tarefas</h1>
+
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Digite uma nova tarefa..." required>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+
+        <div class="filters">
+            <button id="filter-all" class="filter-btn active">Todas</button>
+            <button id="filter-pending" class="filter-btn">Pendentes</button>
+            <button id="filter-completed" class="filter-btn">Concluídas</button>
+        </div>
+
+        <ul id="taskList">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

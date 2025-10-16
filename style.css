@@ -1,0 +1,122 @@
+/* No style.css, acrescente: */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Formulário de Adição */
+#taskForm {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+#taskForm button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#taskForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de Tarefas */
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #007bff;
+}
+
+/* Estilo para tarefa concluída (marcada) */
+.completed-task {
+    text-decoration: line-through;
+    color: #888;
+    border-left-color: #28a745 !important; /* Cor verde para concluída */
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+/* Botões de Ação na Tarefa */
+.task-actions button {
+    margin-left: 8px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task-actions .complete-btn { background-color: #28a745; color: white; }
+.task-actions .edit-btn { background-color: #ffc107; color: #333; }
+.task-actions .delete-btn { background-color: #dc3545; color: white; }
+
+.task-actions .complete-btn:hover { background-color: #1e7e34; }
+.task-actions .edit-btn:hover { background-color: #e0a800; }
+.task-actions .delete-btn:hover { background-color: #c82333; }
+
+/* Filtros */
+.filters {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.filter-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
